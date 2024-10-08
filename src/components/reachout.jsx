@@ -5,7 +5,7 @@ import {
   Flex
 } from '@chakra-ui/react';
 import '../App.css';
-import brian from '../assets/brian.png';
+import connor from '../assets/connor-background-free.png';
 import colors from '../colors.js';
 import { TypeAnimation } from 'react-type-animation';
 import { color } from 'framer-motion';
@@ -44,10 +44,10 @@ const ReachOut = () => {
         transition="all 0.3s ease" 
       >
         <GridItem rowSpan={{ base: 1, md: 1 }} colSpan={{ base: 1, md: 1 }}>
-            <Box h = {imageSizeH} w = {imageSizeW  + 10} bg={colors.purple} borderRadius={15} overflow="hidden">
+            <Box h = {imageSizeH} w = {imageSizeW  + 10} bg={colors.blue} borderRadius={15} overflow="hidden">
               <Image
-                src={brian}
-                alt="brian"
+                src={connor}
+                alt="connor"
                 w={imageSizeW+10}
                 h={imageSizeH}
                 objectFit="cover"
@@ -81,7 +81,7 @@ const ReachOut = () => {
                   wrapper="span"
                   speed={25}
                   className="h1"
-                  style={{ fontSize: {textFontSize}, color: '#f58229', display: 'inline-block' }}
+                  style={{ fontSize: {textFontSize}, color: '#1dc5b4', display: 'inline-block' }}
                   repeat={Infinity}
                 />
               </HStack>
@@ -92,19 +92,19 @@ const ReachOut = () => {
         <GridItem h="100%" w="100%" rowSpan={{ base: 2, md: 7 }} colSpan={{ base: 1, md: 4 }} backgroundColor={colors.tertiaryblack} borderRadius={10}>
           <HStack spacing={spacing} p={spacing} flexWrap="wrap">  
             <Tag p = {2} backgroundColor={colors.quinaryblack} textColor={colors.secondarywhite} fontSize={buttonFontSize}>
-                <box-icon color={colors.purple} name='book-alt' type='solid' size="sm" ></box-icon>
+                <box-icon color={colors.blue} name='book-alt' type='solid' size="sm" ></box-icon>
                 <TagLabel>Bachelors of Applied Science</TagLabel>
             </Tag>
             <Tag p = {2} backgroundColor={colors.quinaryblack} textColor={colors.secondarywhite} fontSize={buttonFontSize}>
-                <box-icon color={colors.purple} type='solid' name='book-alt'></box-icon>
-                <TagLabel>Biomedical Engineer</TagLabel>
+                <box-icon color={colors.blue} type='solid' name='book-alt'></box-icon>
+                <TagLabel>Biomedical Engineering</TagLabel>
             </Tag>
             <Tag p = {2} backgroundColor={colors.quinaryblack} textColor={colors.secondarywhite} fontSize={buttonFontSize}>
-                <box-icon color={colors.purple} type='solid' name='school'></box-icon>
+                <box-icon color={colors.blue} type='solid' name='school'></box-icon>
                 <TagLabel>University of Waterloo</TagLabel>
             </Tag>
             <Tag p = {2} backgroundColor={colors.quinaryblack} textColor={colors.secondarywhite} fontSize={buttonFontSize}>
-                <box-icon color={colors.purple} name='current-location'></box-icon>
+                <box-icon color={colors.blue} name='current-location'></box-icon>
                 <TagLabel>Hamilton, ON</TagLabel>
             </Tag>
           </HStack>
@@ -128,7 +128,7 @@ const ReachOut = () => {
                   backgroundColor: colors.quinaryblack,
                 }}
               >
-                <box-icon color={colors.purple} type='solid' name='file-doc'></box-icon>
+                <box-icon color={colors.blue} type='solid' name='file-doc'></box-icon>
                 <Text
                   ml="2"
                   fontSize={buttonFontSize}
@@ -158,7 +158,7 @@ const ReachOut = () => {
                   backgroundColor: colors.quinaryblack,
                 }}
               >
-                <box-icon color={colors.purple} type='logo' name='linkedin-square'></box-icon>
+                <box-icon color={colors.blue} type='logo' name='linkedin-square'></box-icon>
                 <Text
                   ml="2"
                   fontSize={buttonFontSize}
@@ -188,7 +188,7 @@ const ReachOut = () => {
                   backgroundColor: colors.quinaryblack,
                 }}
               >
-                <box-icon color={colors.purple} type='solid' name='envelope'></box-icon>
+                <box-icon color={colors.blue} type='solid' name='envelope'></box-icon>
                 <Text
                   ml="2"
                   fontSize={buttonFontSize}
@@ -218,7 +218,7 @@ const ReachOut = () => {
                   backgroundColor: colors.quinaryblack,
                 }}
               >
-                <box-icon color={colors.purple} type='logo' name='github'></box-icon>
+                <box-icon color={colors.blue} type='logo' name='github'></box-icon>
                 <Text
                   ml="2"
                   fontSize={buttonFontSize}
@@ -231,259 +231,6 @@ const ReachOut = () => {
         </GridItem>
         
       </Grid>
-
-
-
-
-      {/* <Box
-        height="100%"
-        bgColor={colors.secondaryblack}
-        borderRadius="15px"
-        p={spacing}
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        overflow="hidden"
-      >
-
-        <VStack align="center" spacing={spacing} width="100%">
-          <HStack spacing={spacing} align="center" justify="center">
-            <Box bg={colors.purple} borderRadius={15} over>
-              <Image
-                src={brian}
-                alt="brian"
-                boxSize={imageSize}
-                objectFit="cover"
-              />
-            </Box>
-            <VStack align="center">
-              <HStack spacing={spacing} justify="center">
-                <Box
-                  height="80%"
-                  bgColor="rgba(45,45,45,255)"
-                  borderRadius="20px"
-                  backdropFilter="blur(10px)"
-                  p={2}
-                  borderWidth="1px"
-                  borderColor={colors.border}
-                  borderStyle="solid"
-                >
-                  <HStack spacing={2} align="center" justify="center">
-                    <Box
-                      height="10px"
-                      width="10px"
-                      borderRadius="50%"
-                      bgColor="green"
-                      boxShadow="0 0 10px green"
-                    />
-                    <Text
-                      fontSize="sm"
-                      className="h3"
-                      color={colors.secondarywhite}
-                    >
-                      Looking for Spring/Summer 2025 Internships
-                    </Text>
-                  </HStack>
-                </Box>
-              </HStack>
-              <Text className="h1" fontSize={textFontSize} color={colors.primarywhite}>
-                Brian Manomaisupat
-              </Text>
-              <HStack spacing={2} align="center">
-                <Text className="h3" fontSize="sm" color={colors.secondarywhite}>
-                  I'm a 
-                </Text>
-                <TypeAnimation
-                  sequence={[
-                    'Wallahi',
-                    3000,
-                    'gwan',
-                    3000,
-                  ]}
-                  wrapper="span"
-                  speed={25}
-                  className="h1"
-                  style={{ fontSize: '16px', color: '#a290fc', display: 'inline-block' }}
-                  repeat={Infinity}
-                />
-              </HStack>
-            </VStack>
-          </HStack>
-
-          <Box
-            bgColor="rgba(35,35,35,255)"
-            borderRadius="10px"
-            p={spacing}
-            width="100%"
-            mb={1}
-            textAlign="center"
-          >
-            <HStack spacing={spacing} justify="center" wrap="wrap">
-              <Box
-                bgColor={colors.secondaryblack}
-                borderRadius="20px"
-                p={2}
-                borderWidth="1px"
-                borderColor={colors.border}
-                borderStyle="solid"
-              >
-                <HStack>
-                  <box-icon color={colors.purple} name='current-location'></box-icon>
-                  <Text className="h2" color={colors.secondarywhite} fontSize="sm">Hamilton, ON</Text>
-                </HStack>
-              </Box>
-              <Box
-                bgColor={colors.secondaryblack}
-                borderRadius="20px"
-                p={2}
-                borderWidth="1px"
-                borderColor={colors.border}
-                borderStyle="solid"
-              >
-                <HStack>
-                  <box-icon color={colors.purple} type='solid' name='book-alt'></box-icon>
-                  <Text className="h2" color={colors.secondarywhite} fontSize="sm">Mechatronics & Biomedical Engineer In Training</Text>
-                </HStack>
-              </Box>
-              <Box
-                bgColor={colors.secondaryblack}
-                borderRadius="20px"
-                p={2}
-                borderWidth="1px"
-                borderColor={colors.border}
-                borderStyle="solid"
-              >
-                <HStack>
-                  <box-icon color={colors.purple} type='solid' name='bookmark-alt'></box-icon>
-                  <Text className="h2" color={colors.secondarywhite} fontSize="sm">McMaster University 2021-2026</Text>
-                </HStack>
-              </Box>
-            </HStack>
-          </Box>
-
-          <Grid templateColumns='repeat(auto-fill, minmax(200px, 2fr))' gap={spacing} width="100%">
-            <GridItem>
-              <Box
-                as="button"
-                onClick={() => window.open(resume, "_blank")}
-                height="auto"
-                width="100%"
-                bgColor="rgba(35,35,35,255)"
-                borderRadius="10px"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                transition="0.3s"
-                p={spacing}
-                _hover={{
-                  bgColor: colors.purple,
-                  boxShadow: '0 0 10px rgba(162, 144, 252, 0.8)',
-                }}
-              >
-                <box-icon color={colors.purple} type='solid' name='file-doc'></box-icon>
-                <Text
-                  ml="2"
-                  fontSize={buttonFontSize}
-                  color={colors.secondarywhite}
-                  className="h3"
-                >
-                  Resume
-                </Text>
-              </Box>
-            </GridItem>
-            <GridItem>
-              <Box
-                as="button"
-                onClick={() => window.open(linkedin, "_blank")}
-                height="auto"
-                width="100%"
-                bgColor="rgba(35,35,35,255)"
-                borderRadius="10px"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                transition="0.3s"
-                p={spacing}
-                _hover={{
-                  bgColor: colors.purple,
-                  boxShadow: '0 0 10px rgba(162, 144, 252, 0.8)',
-                }}
-              >
-                <box-icon color={colors.purple} type='logo' name='linkedin-square'></box-icon>
-                <Text
-                  ml="2"
-                  fontSize={buttonFontSize}
-                  color={colors.secondarywhite}
-                  className="h3"
-                >
-                  LinkedIn
-                </Text>
-              </Box>
-            </GridItem>
-
-            <GridItem>
-              <Box
-                as="button"
-                onClick={() => window.open(github, "_blank")}
-                height="auto"
-                width="100%"
-                bgColor="rgba(35,35,35,255)"
-                borderRadius="10px"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                transition="0.3s"
-                p={spacing}
-                _hover={{
-                  bgColor: colors.purple,
-                  boxShadow: '0 0 10px rgba(162, 144, 252, 0.8)',
-                }}
-              >
-                <box-icon color={colors.purple} type='logo' name='github'></box-icon>
-                <Text
-                  ml="2"
-                  fontSize={buttonFontSize}
-                  color={colors.secondarywhite}
-                  className="h3"
-                >
-                  GitHub
-                </Text>
-              </Box>
-            </GridItem>
-
-            <GridItem>
-              <Box
-                as="button"
-                onClick={() => window.open(emailLink, "_self")}
-                height="auto"
-                width="100%"
-                bgColor="rgba(35,35,35,255)"
-                borderRadius="10px"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                transition="0.3s"
-                p={spacing}
-                _hover={{
-                  bgColor: colors.purple,
-                  boxShadow: '0 0 10px rgba(162, 144, 252, 0.8)',
-                }}
-              >
-                <box-icon color={colors.purple} type='solid' name='envelope'></box-icon>
-                <Text
-                  ml="2"
-                  fontSize={buttonFontSize}
-                  color={colors.secondarywhite}
-                  className="h3"
-                >
-                  Email
-                </Text>
-              </Box>
-            </GridItem>
-          </Grid>
-        </VStack>
-      </Box> */}
     </ChakraProvider>
   );
 };
