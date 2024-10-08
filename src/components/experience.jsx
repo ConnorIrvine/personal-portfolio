@@ -10,7 +10,7 @@ const employmentExperiences = [
     role: "Junior Application Developer",
     company: "FirstOntario Credit Union",
     date: "April 2024 - August 2024",
-    description: "Developed a website and automated form processes for volunteer hour certificates, saving 20+ administrative hours per employee monthly and improving coaching form accuracy."
+    description: "Streamlined coaching form management by automating form transfers for staff changes and ensuring managers only accessed current staff records, enhancing data accuracy and efficiency, and eliminating up to 6-month long administrative delays."
   },
   {
     role: "Software Developer In Test",
