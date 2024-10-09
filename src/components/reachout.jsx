@@ -12,7 +12,7 @@ import { color } from 'framer-motion';
 import { SunIcon } from '@chakra-ui/icons';
 import "boxicons";
 
-const resume = "https://drive.google.com/file/d/1f2vHwPw8q6RH-RZV2YdKJHipimYksrXi/view?usp=sharing";
+const resume = "https://drive.google.com/file/d/1BUMpkz3J9xOAR8TGUdtnaT0ZdC6MsvFZ/view?usp=sharing";
 const emailLink = "mailto:c3irvine@uwaterloo.ca";
 const linkedin = "https://www.linkedin.com/in/connor-john-irvine/";
 const github = "https://github.com/ConnorIrvine";
