@@ -19,7 +19,7 @@ const textLibrary = [
   "Implemented automated test cases with Python and Selenium, doubling output and reducing test case failures by 15% @ Telus Health",
   "Led the migration of thousands of customers and staff to Miovision's identity service platform, improving system scalability @ Miovision",
   "Developed Kotlin-based decoder services to extract traffic data and populate metrics in Traffop, scaling to cities across Canada @ Miovision",
-  "Streamlined user authorization logic using asynchronous C# methods, reducing code complexity by over 75% @ Medchart",
+  "Streamlined user authorization logic using asynchronous C# methods, reducing business logic code complexity by over 75% @ Medchart",
   "Connected Marble API to medical record databases weeks ahead of schedule, improving efficiency in accessing records @ Medchart"
 ];
 
@@ -77,7 +77,7 @@ const Metrics = () => {
                 fontSize={textFontSize}
                 color={colors.primarywhite}
                 textAlign="center" // Center text horizontally
-                padding="0 20px" // Optional: add padding to ensure text isn't too close to the edges
+                padding="0px 20px" // Optional: add padding to ensure text isn't too close to the edges
               >
                 {text}
               </Text>
