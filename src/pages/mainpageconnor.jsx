@@ -36,21 +36,17 @@ const MainPageConnor = () => {
       <Box width="100%" display="flex" justifyContent="center" alignItems="center">
         <Center width="100%">
           <Grid
-            h="100vh"  // This keeps the grid height relative to the full viewport
+            h="100vh"
             w="100%"
-            templateRows={{
-              base: "repeat(8, minmax(50px, 1fr))",
-              md: "repeat(8, minmax(100px, 1fr))",
-              lg: "repeat(4, minmax(150px, 1fr))"
-            }}
+            templateRows={{ base: "repeat(32, 50px)", md: "repeat(32, 1fr)", lg: "repeat(4, 1fr)" }}
             templateColumns={{
-              base: "repeat(1, 1fr)",
+              base: "350px",
               md: "repeat(2, 1fr)",
-              lg: "repeat(4, 1fr)"
+              lg: "repeat(4, 1fr)",
             }}
-            gap={6}
+            gap="4"
             p="5"
-            overflowY="auto"  // This enables vertical scrolling
+            overflowY={{ base: "scroll", md: "hidden" }}
             className={`page-wrapper ${hasLoaded ? "fade-in" : ""} staggered-fade-in`}
           >
             <GridItem
