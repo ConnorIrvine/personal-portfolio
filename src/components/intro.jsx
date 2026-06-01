@@ -126,7 +126,7 @@ const Intro = () => {
             as="span"
             wrap="pretty"
           >
-            Seeking full time employment
+            Incoming ML Engineer @ BMO
           </Text>
         </Badge>
 
