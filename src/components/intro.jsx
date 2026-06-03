@@ -159,7 +159,7 @@ const Intro = () => {
         >
           <TypingAnimation
             // texts={['Aerodynamics.', 'Race Telemetry.', 'Vehicle Dynamics.', 'Calibration & Validation.']}
-            texts={['Software Developer',' Systems Engineer']}
+            texts={['Machine Learning Engineer', 'Software Developer', 'Systems Engineer']}
             typingSpeed={120}
             pauseTime={1500}
           />
