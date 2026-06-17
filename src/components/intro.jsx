@@ -126,7 +126,7 @@ const Intro = () => {
             as="span"
             wrap="pretty"
           >
-            Incoming ML Engineer @ BMO
+            Junior Machine Learning Engineer @ BMO
           </Text>
         </Badge>
 
@@ -158,7 +158,6 @@ const Intro = () => {
           as="div"
         >
           <TypingAnimation
-            // texts={['Aerodynamics.', 'Race Telemetry.', 'Vehicle Dynamics.', 'Calibration & Validation.']}
             texts={['Machine Learning Engineer', 'Software Developer', 'Systems Engineer']}
             typingSpeed={120}
             pauseTime={1500}
