@@ -47,6 +47,7 @@ const TypingAnimation = ({ texts, typingSpeed = 100, pauseTime = 1500 }) => {
 
 const Intro = () => {
   return (
+    <>
     <div
       className="grid gap-2 w-full h-full"
       style={{
@@ -172,6 +173,7 @@ const Intro = () => {
             gridColumn: '3',
             gridRow: '2',
             backgroundColor: 'transparent',
+            overflow: 'visible',
         }}
         > 
         <Tooltip content="LinkedIn">
@@ -187,13 +189,15 @@ const Intro = () => {
                 justifyContent: 'center',
                 backgroundColor: 'transparent',
                 border: 'none',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.2s ease',
+                overflow: 'visible'
             }}
             >
-            <a 
-                href="https://www.linkedin.com/in/connor-john-irvine/" 
-                target="_blank" 
+            <a
+                href="https://www.linkedin.com/in/connor-john-irvine/"
+                target="_blank"
                 rel="noopener noreferrer"
+                className="social-icon"
                 style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -203,18 +207,11 @@ const Intro = () => {
                 textDecoration: 'none'
                 }}
             >
-                <LinkedInLogoIcon 
-                style={{ 
+                <LinkedInLogoIcon
+                style={{
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
                     color: 'var(--indigo-10)',
-                    transition: 'all 0.2s ease'
-                }}
-                onMouseEnter={(e) => {
-                    e.target.style.transform = 'scale(1.1)';
-                }}
-                onMouseLeave={(e) => {
-                    e.target.style.transform = 'scale(1)';
                 }}
                 />
             </a>
@@ -229,6 +226,7 @@ const Intro = () => {
             gridColumn: '4',
             gridRow: '2',
             backgroundColor: 'transparent',
+            overflow: 'visible',
         }}
         > 
         <Tooltip 
@@ -246,13 +244,15 @@ const Intro = () => {
                 justifyContent: 'center',
                 backgroundColor: 'transparent',
                 border: 'none',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.2s ease',
+                overflow: 'visible'
             }}
             >
-            <a 
-                href="https://github.com/ConnorIrvine" 
-                target="_blank" 
+            <a
+                href="https://github.com/ConnorIrvine"
+                target="_blank"
                 rel="noopener noreferrer"
+                className="social-icon"
                 style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -262,18 +262,11 @@ const Intro = () => {
                 textDecoration: 'none'
                 }}
             >
-                <GitHubLogoIcon 
-                style={{ 
+                <GitHubLogoIcon
+                style={{
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
                     color: 'var(--indigo-10)',
-                    transition: 'all 0.2s ease'
-                }}
-                onMouseEnter={(e) => {
-                    e.target.style.transform = 'scale(1.1)';
-                }}
-                onMouseLeave={(e) => {
-                    e.target.style.transform = 'scale(1)';
                 }}
                 />
             </a>
@@ -288,6 +281,7 @@ const Intro = () => {
             gridColumn: '5',
             gridRow: '2',
             backgroundColor: 'transparent',
+            overflow: 'visible',
         }}
         > 
         <Tooltip content="Email">
@@ -303,13 +297,15 @@ const Intro = () => {
                 justifyContent: 'center',
                 backgroundColor: 'transparent',
                 border: 'none',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.2s ease',
+                overflow: 'visible'
             }}
             >
-            <a 
-                href="mailto:connorjohnirvine@gmail.com" 
-                target="_blank" 
+            <a
+                href="mailto:connorjohnirvine@gmail.com"
+                target="_blank"
                 rel="noopener noreferrer"
+                className="social-icon"
                 style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -319,18 +315,11 @@ const Intro = () => {
                 textDecoration: 'none'
                 }}
             >
-                <EnvelopeClosedIcon 
-                style={{ 
+                <EnvelopeClosedIcon
+                style={{
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
                     color: 'var(--indigo-10)',
-                    transition: 'all 0.2s ease'
-                }}
-                onMouseEnter={(e) => {
-                    e.target.style.transform = 'scale(1.1)';
-                }}
-                onMouseLeave={(e) => {
-                    e.target.style.transform = 'scale(1)';
                 }}
                 />
             </a>
@@ -338,6 +327,15 @@ const Intro = () => {
         </Tooltip>
         </div>
     </div>
+    <style>{`
+      .social-icon svg {
+        transition: transform 0.2s ease;
+      }
+      .social-icon:hover svg {
+        transform: scale(1.15);
+      }
+    `}</style>
+    </>
   );
 };
 

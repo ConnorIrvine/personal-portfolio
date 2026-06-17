@@ -5,9 +5,20 @@ import firstontario from '../assets/logo-firstontario.png';
 import telus from '../assets/logo-telus.png';
 import miovision from '../assets/logo-miovision.png';
 import medchart from '../assets/logo-medchart.png';
+import bmo from '../assets/logo-bmo.svg';
 import { DoubleArrowRightIcon } from '@radix-ui/react-icons';
 
 const experiences = [
+  {
+    title: 'Junior Machine Learning Engineer',
+    company: 'BMO',
+    duration: 'Jun. 2026 – Present',
+    location: 'Toronto, ON',
+    image: bmo,
+    cardBackground: 'linear-gradient(135deg, var(--red-5), var(--red-9))',
+    description: [],
+    skills: [],
+  },
   {
     title: 'Systems Engineer Intern',
     company: 'St. Marys Cement',
@@ -122,7 +133,7 @@ const Experience = () => {
                 style={{
                   flex: '0 0 calc(100% / 3 - 1rem)',
                   minWidth: '250px',
-                  background: sharedBackground,
+                  background: exp.cardBackground || sharedBackground,
                   color: sharedTextColor,
                   borderRadius: '1rem',
                   scrollSnapAlign: 'start',
@@ -297,7 +308,7 @@ const Experience = () => {
                 </ul>
 
               {/* Skills */}
-              {exp.skills && (
+              {exp.skills && exp.skills.length > 0 && (
                 <div
                   style={{
                     display: 'flex',
