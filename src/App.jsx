@@ -30,7 +30,6 @@ function App() {
                   style={{
                     minHeight: '200px',
                     backgroundColor: '#eeeeee',
-                    backdropFilter: 'blur(8px)',
                   }}
                 >
                   <Intro />
@@ -44,7 +43,6 @@ function App() {
                   style={{
                     minHeight: '100px',
                     backgroundColor: '#eeeeee',
-                    backdropFilter: 'blur(8px)',
                   }}
                 >
                   <Education />
@@ -58,7 +56,6 @@ function App() {
                   style={{
                     minHeight: '150px',
                     backgroundColor: '#eeeeee',
-                    backdropFilter: 'blur(8px)',
                   }}
                 >
                   <Experience />
@@ -73,7 +70,6 @@ function App() {
                     minHeight: '150px',
                     maxHeight: '600px',
                     backgroundColor: '#eeeeee',
-                    backdropFilter: 'blur(8px)',
                   }}
                 >
                   <Projects />
@@ -87,7 +83,6 @@ function App() {
                   style={{
                     minHeight: '300px',
                     backgroundColor: '#eeeeee',
-                    backdropFilter: 'blur(8px)',
                   }}
                 >
                   <TechStack />
@@ -107,7 +102,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.5 }}
-                style={{ flex: 5, minHeight: '180px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 5, minHeight: '180px', backgroundColor: '#eeeeee' }}
               >
                 <Intro />
               </MotionBox>
@@ -116,7 +111,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                style={{ flex: 3, minHeight: '110px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 3, minHeight: '110px', backgroundColor: '#eeeeee' }}
               >
                 <Education />
               </MotionBox>
@@ -125,7 +120,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                style={{ flex: 8, minHeight: '200px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 8, minHeight: '200px', backgroundColor: '#eeeeee' }}
               >
                 <Experience />
               </MotionBox>
@@ -138,7 +133,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                style={{ flex: 10, minHeight: '300px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 10, minHeight: '300px', backgroundColor: '#eeeeee' }}
               >
                 <Projects />
               </MotionBox>
@@ -147,7 +142,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                style={{ flex: 6, minHeight: '200px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 6, minHeight: '200px', backgroundColor: '#eeeeee' }}
               >
                 <TechStack />
               </MotionBox>

@@ -28,8 +28,6 @@ const TechStack = () => {
     border: '1px solid rgba(255, 255, 255, 0.2)', // subtle border
     borderRadius: '12px',
     padding: '0.35rem 0.75rem',
-    backdropFilter: 'blur(10px)', // frosted glass effect
-    WebkitBackdropFilter: 'blur(10px)', // Safari support
     boxShadow: '0 1px 2px rgba(255, 255, 255, 0.15), 0 4px 8px rgba(0, 0, 0, 0.4)',
     textAlign: 'center',
     display: 'inline-block',

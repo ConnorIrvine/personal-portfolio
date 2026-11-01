@@ -211,7 +211,6 @@ const Experience = () => {
                 <div
                   style={{
                     fontFamily: 'Inter, system-ui, sans-serif',
-                    backdropFilter: 'blur(8px)',
                     backgroundColor: 'rgba(17, 17, 17, 0.3)',
                     padding: '0.5rem',
                     paddingRight: '2rem',
